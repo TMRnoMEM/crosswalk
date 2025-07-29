@@ -20,7 +20,8 @@
 #orig 
 #chromium_crosswalk_rev = 'dd39e4fbbc1e4417cef2f908cc0a42af1e2120aa'
 
-chromium_crosswalk_rev = 'dd34c592a78832912275550dc81d6e131098345d'
+chromium_crosswalk_rev = '8dea7d9363ee0541fe5a2858aca7606878b61a58'
+#'dd34c592a78832912275550dc81d6e131098345d'
 #'9a967afdddfb7b7af327681f52c1f92b83944f3c'
 #ab583b52a0576ccf60c791df6642f0ee195291d0'
 #5d68d90dcaff8042649baabca842f28249a95036'
@@ -47,6 +48,7 @@ buildtools_rev = '505de88083136eefd056e5ee4ca0f01fe9b33de8'
 
 chromium_git = 'https://chromium.googlesource.com'
 ks_git = 'https://github.com/ks32'
+my_git = 'https://github.com/TMRnoMEM'
 
 # ------------------------------------------------------
 # gclient solutions.
@@ -55,12 +57,12 @@ ks_git = 'https://github.com/ks32'
 
 solutions = [
   { 'name': 'src',
-    'url': ks_git + '/chromium-crosswalk.git@' + chromium_crosswalk_rev,
+    'url': my_git + '/chromium-crosswalk.git@' + chromium_crosswalk_rev,
     'deps_file': '.DEPS.git',
     'managed': True,
     'custom_deps': {
       'src':
-        ks_git + '/chromium-crosswalk.git@' + chromium_crosswalk_rev,
+        my_git + '/chromium-crosswalk.git@' + chromium_crosswalk_rev,
       'src/v8':
         ks_git + '/v8-crosswalk.git@' + v8_crosswalk_rev,
 

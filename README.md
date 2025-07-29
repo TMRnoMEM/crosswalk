@@ -9,7 +9,7 @@ Crosswalk is an app runtime based on Chromium/Blink.
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 export PATH=/home/[user]/depot_tools:$PATH
 export XWALK_OS_ANDROID=1
-gclient config --name=src/xwalk https://github.com/ks32/crosswalk.git@origin/ks_chromium_77
+gclient config --name=src/xwalk https://github.com/TMRnoMEM/crosswalk.git@origin/77.0.3865.129
 
 Edit this newly-created .gclient file, and add the following to the bottom:
 target_os = ['android']
