@@ -16,7 +16,7 @@ target_os = ['android']
 
 gclient sync
 
-gn args out/Default_x64  
+gn args out/Default_x64
 (add arguments as in args_x64.txt)
 
 ninja -k3 -C out/Default_x64 xwalk_core_library
